@@ -106,31 +106,6 @@ export const wagmiClient = createConfig({
     safeConnector,
   ],
   publicClient,
-  storage: {
-    getItem: <T>(key: string): T | null => {
-      try {
-        const item = window.localStorage.getItem(key)
-        return item ? JSON.parse(item) : null
-      } catch (err) {
-        console.error('Error getting item from storage:', err)
-        return null
-      }
-    },
-    setItem: <T>(key: string, value: T | null): void => {
-      try {
-        window.localStorage.setItem(key, JSON.stringify(value))
-      } catch (err) {
-        console.error('Error setting item in storage:', err)
-      }
-    },
-    removeItem: (key: string): void => {
-      try {
-        window.localStorage.removeItem(key)
-      } catch (err) {
-        console.error('Error removing item from storage:', err)
-      }
-    },
-  },
 })
 
 const urls: string[] = []
