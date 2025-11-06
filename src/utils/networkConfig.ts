@@ -36,6 +36,7 @@ export enum ChainId {
   MUMBAI = 80001,
   AVALANCHE = 43114,
   FUJI = 43113,
+  SEPOLIA = 11155111,
 }
 
 export const NETWORK_CONFIGS: {
@@ -50,4 +51,5 @@ export const NETWORK_CONFIGS: {
   [bscTestnet.id]: bscTestnet,
   [avalanche.id]: avalanche,
   [avalancheFuji.id]: avalancheFuji,
+  [sepolia.id]: sepolia,
 }

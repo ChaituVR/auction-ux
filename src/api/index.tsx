@@ -13,6 +13,7 @@ import {
   GRAPH_API_URL_DEVELOP_MAINNET,
   GRAPH_API_URL_DEVELOP_MUMBAI,
   GRAPH_API_URL_DEVELOP_POLYGON,
+  GRAPH_API_URL_DEVELOP_SEPOLIA,
   GRAPH_API_URL_DEVELOP_XDAI,
   GRAPH_API_URL_PRODUCTION_AVALANCHE,
   GRAPH_API_URL_PRODUCTION_BSC,
@@ -22,6 +23,7 @@ import {
   GRAPH_API_URL_PRODUCTION_MAINNET,
   GRAPH_API_URL_PRODUCTION_MUMBAI,
   GRAPH_API_URL_PRODUCTION_POLYGON,
+  GRAPH_API_URL_PRODUCTION_SEPOLIA,
   GRAPH_API_URL_PRODUCTION_XDAI,
   isDev,
 } from '../constants/config'
@@ -77,6 +79,13 @@ function createAdditionalServiceApi(): AdditionalServicesApi {
       networkId: 97,
       graph_url_production: GRAPH_API_URL_PRODUCTION_BSC_TESTNET,
       graph_url_develop: GRAPH_API_URL_DEVELOP_BSC_TESTNET,
+    })
+  }
+  if (GRAPH_API_URL_DEVELOP_SEPOLIA) {
+    config.push({
+      networkId: 11155111,
+      graph_url_production: GRAPH_API_URL_PRODUCTION_SEPOLIA,
+      graph_url_develop: GRAPH_API_URL_DEVELOP_SEPOLIA,
     })
   }
   const dexPriceEstimatorApi = new AdditionalServicesApiImpl(config)

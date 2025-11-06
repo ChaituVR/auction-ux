@@ -2,6 +2,7 @@ import { useCallback } from 'react'
 
 import { useDispatch, useSelector } from 'react-redux'
 
+import { AppDispatch, AppState } from '..'
 import {
   appendOrders,
   cancelOrders,
@@ -11,7 +12,6 @@ import {
   resetOrders,
 } from './actions'
 import { OrderDisplay } from './reducer'
-import { AppDispatch, AppState } from '..'
 
 export function useOrderState(): AppState['orders'] {
   return useSelector<AppState, AppState['orders']>((state) => state.orders)

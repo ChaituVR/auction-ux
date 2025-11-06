@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from 'react'
 import round from 'lodash.round'
 import { useDispatch, useSelector } from 'react-redux'
 
+import { AppDispatch, AppState } from '..'
 import {
   appendBid,
   pullOrderbookData,
@@ -11,7 +12,6 @@ import {
   resetUserPrice,
   resetUserVolume,
 } from './actions'
-import { AppDispatch, AppState } from '..'
 import { additionalServiceApi } from '../../api'
 import { OrderBookData, PricePoint } from '../../api/AdditionalServicesApi'
 import { CalculatorClearingPrice } from '../../components/auction/OrderbookWidget'

@@ -37,6 +37,7 @@ export const EASY_AUCTION_NETWORKS: { [chainId in ChainId]: string } = {
   [ChainId.FUJI]: '0xa5cd8D8effACB7Ad861e3797404924199D1463a5',
   [ChainId.BSC]: '0x231F3Fd7c3E3C9a2c8A03B72132c31241DF0a26C',
   [ChainId.BSCTESTNET]: '0x231F3Fd7c3E3C9a2c8A03B72132c31241DF0a26C',
+  [ChainId.SEPOLIA]: '0x231F3Fd7c3E3C9a2c8A03B72132c31241DF0a26C',
 }
 
 export const DEPOSIT_AND_PLACE_ORDER: { [chainId in ChainId]: string } = {
@@ -49,6 +50,7 @@ export const DEPOSIT_AND_PLACE_ORDER: { [chainId in ChainId]: string } = {
   [ChainId.FUJI]: '0x39cbA0cC28EE67EAa8134C0e80a061c13EBC3603',
   [ChainId.BSC]: '0x4bAbb4b89ed7180aeF95F872f621afEE724F0344',
   [ChainId.BSCTESTNET]: '0x14082EDeFCa073578d2C16E8fB42967bEc188E59',
+  [ChainId.SEPOLIA]: '0xDDeFBcF94d46E771dad74882012704f51CA15ed8',
 }
 
 export const ALLOW_LIST_OFF_CHAIN_MANAGED: { [chainId in ChainId]: string } = {
@@ -61,6 +63,7 @@ export const ALLOW_LIST_OFF_CHAIN_MANAGED: { [chainId in ChainId]: string } = {
   [ChainId.FUJI]: '0x2f0045AA41879184a283A644F25Ec4FA31C8767E',
   [ChainId.BSC]: '0xE0AD16EB7Ea467C694E6cFdd5E7D61FE850e8B53',
   [ChainId.BSCTESTNET]: '0xE0AD16EB7Ea467C694E6cFdd5E7D61FE850e8B53',
+  [ChainId.SEPOLIA]: '0xE0AD16EB7Ea467C694E6cFdd5E7D61FE850e8B53',
 }
 
 const getExplorerPrefix = (chainId: ChainId) => {
@@ -216,7 +219,7 @@ export function isTokenWETH(tokenAddress?: string, chainId?: ChainId): boolean {
     !!tokenAddress &&
     !!chainId &&
     tokenAddress == WETH[chainId]?.address &&
-    (chainId === 1 || chainId === 5)
+    (chainId === 1 || chainId === 5 || chainId === 11155111)
   )
 }
 

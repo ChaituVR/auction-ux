@@ -2,8 +2,8 @@ import { useCallback } from 'react'
 
 import { useDispatch, useSelector } from 'react-redux'
 
-import { loadTokenListFromAPI } from './actions'
 import { AppDispatch, AppState } from '..'
+import { loadTokenListFromAPI } from './actions'
 
 export function useTokenListState(): AppState['tokenList'] {
   return useSelector<AppState, AppState['tokenList']>((state) => state.tokenList)

@@ -24,6 +24,8 @@ export const GRAPH_API_URL_DEVELOP_BSC = process.env.REACT_APP_GRAPH_API_URL_BSC
 export const GRAPH_API_URL_PRODUCTION_BSC = process.env.REACT_APP_GRAPH_API_URL_BSC
 export const GRAPH_API_URL_DEVELOP_BSC_TESTNET = process.env.REACT_APP_GRAPH_API_URL_BSC_TESTNET
 export const GRAPH_API_URL_PRODUCTION_BSC_TESTNET = process.env.REACT_APP_GRAPH_API_URL_BSC_TESTNET
+export const GRAPH_API_URL_DEVELOP_SEPOLIA = process.env.REACT_APP_GRAPH_API_URL_SEPOLIA
+export const GRAPH_API_URL_PRODUCTION_SEPOLIA = process.env.REACT_APP_GRAPH_API_URL_SEPOLIA
 
 // Infura bridges like 'https://mainnet.infura.io/v3/...'
 export const NETWORK_URL_GOERLI = process.env.REACT_APP_NETWORK_URL_GOERLI || ''
@@ -42,6 +44,8 @@ export const NETWORK_URL_BSC =
   process.env.REACT_APP_NETWORK_URL_BSC || 'https://bsc-dataseed.binance.org/'
 export const NETWORK_URL_BSC_TESTNET =
   process.env.REACT_APP_NETWORK_URL_BSC_TESTNET || 'https://data-seed-prebsc-1-s1.binance.org:8545/'
+export const NETWORK_URL_SEPOLIA =
+  process.env.REACT_APP_NETWORK_URL_SEPOLIA || 'https://rpc.ankr.com/eth_sepolia'
 
 export const INFURA_KEY = process.env.REACT_APP_INFURA_PROJECT_KEY || ''
 export const WALLET_CONNECT_PROJECT_ID = process.env.REACT_APP_WALLET_CONNECT_PROJECT_ID || ''

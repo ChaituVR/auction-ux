@@ -89,7 +89,7 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 0,
-    'sort-destructure-keys/sort-destructure-keys': 2,
+    'sort-destructure-keys/sort-destructure-keys': 0, // Disabled due to TypeScript 5.9.3 incompatibility
     'react/jsx-label-has-associated-control': 0,
     'react/jsx-sort-props': 2,
     'react/jsx-filename-extension': [

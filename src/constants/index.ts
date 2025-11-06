@@ -19,6 +19,7 @@ export const chainNames = {
   80001: 'Mumbai',
   43114: 'Avalanche',
   43113: 'Fuji',
+  11155111: 'Sepolia',
 }
 
 export const explorerNames = {
@@ -31,6 +32,7 @@ export const explorerNames = {
   80001: 'Polygscan',
   43114: 'Snowtrace',
   43113: 'Snowtrace',
+  11155111: 'Etherscan',
 }
 
 export const unwrapMessage = {
@@ -43,6 +45,7 @@ export const unwrapMessage = {
   80001: `Unwrap WMATIC to MATIC on Quickswap`,
   43114: `Unwrap WAVAX to AVAX on Quickswap`,
   43113: `Unwrap WAVAX to AVAX on Quickswap`,
+  11155111: `Unwrap WETH to ETH on Uniswap`,
 }
 
 const MAINNET_WALLETS = {

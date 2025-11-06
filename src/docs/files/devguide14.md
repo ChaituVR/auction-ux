@@ -9,4 +9,5 @@ Gnosis Auction supports the sale and bidding of ERC20 tokens on the following ne
 
 #### Testnets
 1. Goerli (ETH)
-2. Polygon Mumbai (MATIC)
+2. Sepolia (ETH)
+3. Polygon Mumbai (MATIC)
